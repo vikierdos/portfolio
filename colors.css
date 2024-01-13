@@ -1,9 +1,8 @@
 body{
-    /*background-color: #D5C3B9;*/
-    background-color: #8FA66D;
+    background-color: #897C5A;
+    color: #E9F2C9;
 }
 h1{
-    /*color: #8C6370;*/
     color: #fff;
     text-shadow: 2px 2px 3px black;
     
@@ -26,10 +25,37 @@ nav{
 .kinyito-belul a{
     color: #E9F2C9;
 }
+#tablazat{
+    background-color: #433F36;
+}
 footer{
     background-color: #0F2612;
-    color: #E9F2C9;
 }
-footer a{
+a:not(nav a){
     color: #72A603;
+}
+
+a:visited:not(nav a:visited){
+    color: #A9D943;
+}
+#footer label{
+    color:#A9D943;
+}
+button{
+    background-color: #ffffff00;
+    border: #ffffff00;
+    color:#A9D943;
+}
+
+.dark-mode{
+    background-color: #282520;
+}
+.dark-mode #tablazat{
+    background-color: #081609;
+}
+.dark-mode #nav{
+    background-color: #154715;
+}
+.dark-mode #nav a{
+    color: #4A976D;
 }

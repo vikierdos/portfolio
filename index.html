@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat Alternates"
       rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/167a7b748c.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous" ></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="colors.css" id="vilagos"/>
+    <link rel="stylesheet" href="colors_d.css" id="sotet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erdős Viktória | Kezdőlap</title>
@@ -74,8 +80,8 @@
                 >
               </td>
               <td>
-                <img src="criminal_minds.jpg" alt="Gyilkos Elmék" /><img
-                  src="supernatural.jpg"
+                <img src="kezdolap/criminal_minds.jpg" alt="Gyilkos Elmék" /><img
+                  src="kezdolap/supernatural.jpg"
                   alt="Odaát"
                 />
               </td>
@@ -88,7 +94,7 @@
                   target="_blank">Eredet</a
                 >
               </td>
-              <td><img src="inception.jpg" alt="Eredet" /></td>
+              <td><img src="kezdolap/inception.jpg" alt="Eredet" /></td>
             </tr>
             <tr>
               <td>Zene</td>
@@ -100,7 +106,7 @@
             <tr>
               <td>Művész</td>
               <td>J. C. Leyendecker</td>
-              <td><img src="leyendecker.jpg" alt="Leyendecker" /></td>
+              <td><img src="kezdolap/leyendecker.jpg" alt="Leyendecker" /></td>
             </tr>
             <tr>
               <td>Hobbijaim</td>
@@ -123,6 +129,7 @@
             </a>
         </span>
         </p>
+        <p>Téma: <button onclick="darkMode()"><i class="fa-regular fa-sun nap"></i><i class="fa-solid fa-moon hold"></i></button></p>
       </footer>
     </main>
   </body>

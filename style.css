@@ -4,6 +4,7 @@
   margin: 0;
 }
 main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 90%;
   max-width: 1000px;
   margin: auto;
@@ -14,11 +15,10 @@ main {
     "n"
     "t"
     "f";
-  padding: 5px;
 }
 header {
   grid-area: h;
-  background-image: url(noveny.jpg);
+  background-image: url(kezdolap/noveny.jpg);
   height: 483px;
   background-position: bottom;
 }
@@ -66,6 +66,21 @@ footer {
   position: sticky;
   bottom: 0;
 }
+button{
+    font-size: 20px;
+}
+.nap{
+    display: none;
+}
+.hold{
+    display: block;
+}
+.dark-mode .nap{
+    display: block;
+}
+.dark-mode .hold{
+    display: none;
+}
 h1 {
   font-family: "Montserrat Alternates";
   font-size: 72px;
@@ -76,7 +91,6 @@ h1 {
 /*Kezdőlap*/
 #kezdolap #tablazat {
   grid-area: t;
-  margin-top: 30px;
 }
 
 #kezdolap table {
@@ -120,7 +134,7 @@ h1 {
 }
 
 
-/*Elerhetosegek*/
+/*Fotozas*/
 
 #fotogaleria{
     width: 90%;
@@ -133,15 +147,31 @@ h1 {
 .fotok img{
     width: 100%;
 }
-.fotok img:hover{
-    width: 150%;
-    transition: width 1s;
+
+/*PROGRAMOK*/
+
+#program-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h2{
+    text-align: center;
+}
+.jobb, .bal{
+    font-size: 50px;
+}
+.jobb i{
+    text-align: right;
+}
+#programok img{
+    width: 100%;
 }
 
 @media screen and (max-width: 800px) {
-  main {
+  main, #fotogaleria {
     width: 100%;
     font-size: 15pt;
+    margin: 0;
   }
   #rajz article {
     grid-template-columns: 1fr 1fr;
@@ -150,9 +180,18 @@ h1 {
     height: auto;
     grid-template-rows: auto 40px 40px;
   }
+  #foto-article{
+    grid-template-columns: 1fr 1fr;
+}
+
 }
 
 @media screen and (max-width: 700px) {
+    main, #fotogaleria {
+        width: 100%;
+        font-size: 15pt;
+        margin: 0;
+      }
     #rajz article {
         grid-template-columns:1fr;
       }
@@ -182,5 +221,13 @@ h1 {
     }
     #tablazat img:not(#rajz img){
         display: none;
+    }
+    #foto-article{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    #program-section{
+        grid-template-columns: 1fr;
     }
 }
