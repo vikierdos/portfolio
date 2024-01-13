@@ -140,7 +140,7 @@ h1 {
 
 @media screen and (max-width: 800px) {
   main {
-    width: 50%;
+    width: 100%;
     font-size: 15pt;
   }
   #rajz article {
