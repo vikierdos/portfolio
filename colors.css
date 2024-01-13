@@ -1,0 +1,35 @@
+body{
+    /*background-color: #D5C3B9;*/
+    background-color: #8FA66D;
+}
+h1{
+    /*color: #8C6370;*/
+    color: #fff;
+    text-shadow: 2px 2px 3px black;
+    
+}
+nav{
+    background-color: #2E6043;
+}
+.navli a, .kinyito-gomb{
+    color: #E9F2C9;
+}
+.navli:hover, .kinyito:hover, .kinyito-belul a:hover{
+    background-color: #E9F2C9;
+}
+.navli:hover a, .kinyito-belul a:hover, .kinyito:hover a:not(.kinyito-belul a){
+    color: #2E6043;
+}
+.kinyito-belul{
+    background-color: #2E6043;
+}
+.kinyito-belul a{
+    color: #E9F2C9;
+}
+footer{
+    background-color: #0F2612;
+    color: #E9F2C9;
+}
+footer a{
+    color: #72A603;
+}

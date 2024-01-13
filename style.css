@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "h"
+    "n"
+    "t"
+    "f";
+  padding: 5px;
+}
+header {
+  grid-area: h;
+  background-image: url(noveny.jpg);
+  height: 483px;
+  background-position: bottom;
+}
+nav {
+  grid-area: n;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-transform: uppercase;
+  }
+nav ul li{
+    text-align: center;
+    padding: 20px;
+  }
+nav ul li a{
+    text-decoration: none;
+}
+
+.kinyito-belul {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    width: 33.5%;
+    min-width: 200px;
+    margin-left: -20px;
+  }
+  .kinyito:hover .kinyito-belul {
+    display: block;
+  }
+  
+  .kinyito-belul a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+#tablazat {
+  grid-area: t;
+  margin-top: 30px;
+}
+footer {
+  grid-area: f;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+}
+h1{
+    font-family: "Montserrat Alternates";
+    font-size: 72px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  vertical-align: top;
+}
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+@media screen and(max-width: 780){
+
+}
