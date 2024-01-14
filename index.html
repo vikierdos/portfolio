@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
-    <script>
-        function darkMode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-    </script>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat Alternates"
       rel="stylesheet"
@@ -130,7 +124,14 @@
         </span>
         </p>
         <p>Téma: <button onclick="darkMode()"><i class="fa-regular fa-sun nap"></i><i class="fa-solid fa-moon hold"></i></button></p>
+        <script>
+            function darkMode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
       </footer>
+
     </main>
   </body>
 </html>

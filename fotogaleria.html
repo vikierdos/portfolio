@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
-    <script>
-        lightGallery(document.getElementsByClassName('fotok'), {
-            mode: 'lg-fade',
-        }
-        );
-    </script>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat Alternates"
       rel="stylesheet"
@@ -42,7 +36,7 @@
       </nav>
       <article id="foto-article">
         <section class="fotok fotok1">
-            <a href="kepek/DSC05110_1.jpg"><img src="kepek/DSC05110_1.jpg" alt="Virág" /></a>
+            <img src="kepek/DSC05110_1.jpg" alt="Virág" />
           <img src="kepek/DSC05139_1.jpg" alt="Fa" />
           <img src="kepek/DSC05162_1.jpg" alt="Virág" />
           <img src="kepek/DSC05348.jpg" alt="Hosszú nyakú teknős" />
@@ -97,6 +91,13 @@
             </a>
           </span>
         </p>
+        <p>Téma: <button onclick="darkMode()"><i class="fa-regular fa-sun nap"></i><i class="fa-solid fa-moon hold"></i></button></p>
+        <script>
+            function darkMode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
       </footer>
     </main>
   </body>

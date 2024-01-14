@@ -1,6 +1,6 @@
 body{
     background-color: #897C5A;
-    color: #E9F2C9;
+    color: #0A0F0B;
 }
 h1{
     color: #fff;
@@ -8,28 +8,29 @@ h1{
     
 }
 nav{
-    background-color: #2E6043;
-}
-.navli a, .kinyito-gomb{
-    color: #E9F2C9;
-}
-.navli:hover, .kinyito:hover, .kinyito-belul a:hover{
     background-color: #E9F2C9;
 }
+.navli a, .kinyito-gomb{
+    color: #2A2E2D;
+}
+.navli:hover, .kinyito:hover, .kinyito-belul a:hover{
+    background-color: #2A2E2D;
+}
 .navli:hover a, .kinyito-belul a:hover, .kinyito:hover a:not(.kinyito-belul a){
-    color: #2E6043;
+    color: #E9F2C9;
 }
 .kinyito-belul{
-    background-color: #2E6043;
+    background-color: #E9F2C9;
 }
 .kinyito-belul a{
-    color: #E9F2C9;
+    color: #2A2E2D;
 }
 #tablazat{
     background-color: #433F36;
 }
 footer{
-    background-color: #0F2612;
+    background-color: #2A2E2D;
+    color: #E9F2C9;
 }
 a:not(nav a){
     color: #72A603;
@@ -49,6 +50,7 @@ button{
 
 .dark-mode{
     background-color: #282520;
+    color: #E9F2C9;
 }
 .dark-mode #tablazat{
     background-color: #081609;
@@ -56,6 +58,26 @@ button{
 .dark-mode #nav{
     background-color: #154715;
 }
-.dark-mode #nav a{
+.dark-mode .navli a, .dark-mode .kinyito-gomb{
     color: #4A976D;
 }
+
+
+.dark-mode .navli:hover, .dark-mode .kinyito:hover, .dark-mode .kinyito-belul a:hover{
+    background-color: #0A0F0B;
+}
+.dark-mode.navli:hover a, .dark-mode .kinyito-belul a:hover, .dark-mode .kinyito:hover a:not( .dark-mode .kinyito-belul a){
+    color: #4A976D;
+}
+
+.dark-mode .kinyito-belul{
+    background-color: #154715;
+}
+.dark-mode .kinyito-belul a{
+    color: #4A976D;
+}
+
+.dark-mode footer{
+    background-color: #154715;
+}
+

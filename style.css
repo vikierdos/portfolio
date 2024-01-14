@@ -183,6 +183,14 @@ h2{
   #foto-article{
     grid-template-columns: 1fr 1fr;
 }
+footer{
+    font-size: 10pt;
+}
+
+header {
+    height: 300px;
+    background-position: top;
+  }
 
 }
 
@@ -230,4 +238,12 @@ h2{
     #program-section{
         grid-template-columns: 1fr;
     }
+
+    footer{
+        font-size: 10pt;
+    }
+    header {
+        height: 200px;
+        background-position: center;
+      }
 }

@@ -34,8 +34,8 @@
       </nav>
       <article id="elerhetosegek">
         <section><a href="https://www.instagram.com/vikierdos/" target="_blank"><i class="fa-brands fa-instagram" style="font-size:200px;color:#467302"></i></i></a></section>
-        <section><a href="https://www.facebook.com/people/Viki-Erdős/pfbid02dk5wFNbiGPB94pBM5LGKPqAuR1TxRKHCCWMASGmmGHhB6ZXD9m5NdysFik8thw1ml/"><i class="fa-brands fa-facebook" style="font-size:200px;color:#467302"></i></a></section>
-        <section><a href="https://github.com/vikierdos"><i class="fa-brands fa-github" style="font-size:200px;color:#467302"></i></a></section>
+        <section><a href="https://www.facebook.com/people/Viki-Erdős/pfbid02dk5wFNbiGPB94pBM5LGKPqAuR1TxRKHCCWMASGmmGHhB6ZXD9m5NdysFik8thw1ml/" target="_blank"><i class="fa-brands fa-facebook" style="font-size:200px;color:#467302"></i></a></section>
+        <section><a href="https://github.com/vikierdos" target="_blank"><i class="fa-brands fa-github" style="font-size:200px;color:#467302"></i></a></section>
       </article>
       <footer id="footer">
         <p>
@@ -49,6 +49,13 @@
             </a>
         </span>
         </p>
+        <p>Téma: <button onclick="darkMode()"><i class="fa-regular fa-sun nap"></i><i class="fa-solid fa-moon hold"></i></button></p>
+        <script>
+            function darkMode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
       </footer>
     </main>
   </body>
